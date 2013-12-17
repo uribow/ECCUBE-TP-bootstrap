@@ -38,7 +38,7 @@
 
     <!--{* ▼HeaderHeaderTop COLUMN*}-->
     <!--{if $arrPageLayout.HeaderTopNavi|@count > 0}-->
-        <div id="headertopcolumn class="col-xs-3 col-md-12"">
+        <div id="headertopcolumn class="col-lg-3 col-md-12"">
             <!--{* ▼上ナビ *}-->
             <!--{foreach key=HeaderTopNaviKey item=HeaderTopNaviItem from=$arrPageLayout.HeaderTopNavi}-->
                 <!-- ▼<!--{$HeaderTopNaviItem.bloc_name}--> -->
@@ -64,7 +64,7 @@
 
         <!--{* ▼TOP COLUMN*}-->
         <!--{if $arrPageLayout.TopNavi|@count > 0}-->
-            <div id="topcolumn class="col-xs-3 col-md-12"">
+            <div id="topcolumn class="col-lg-3 col-md-12"">
                 <!--{* ▼上ナビ *}-->
                 <!--{foreach key=TopNaviKey item=TopNaviItem from=$arrPageLayout.TopNavi}-->
                     <!-- ▼<!--{$TopNaviItem.bloc_name}--> -->
@@ -82,7 +82,7 @@
 
         <!--{* ▼LEFT COLUMN *}-->
         <!--{if $arrPageLayout.LeftNavi|@count > 0}-->
-            <div id="leftcolumn" class="side_column col-xs-3 col-md-12">
+            <div id="leftcolumn" class="side_column col-lg-3 col-md-12">
                 <!--{* ▼左ナビ *}-->
                 <!--{foreach key=LeftNaviKey item=LeftNaviItem from=$arrPageLayout.LeftNavi}-->
                     <!-- ▼<!--{$LeftNaviItem.bloc_name}--> -->
@@ -101,12 +101,12 @@
         <!--{* ▼CENTER COLUMN *}-->
         <div 
             <!--{if $tpl_column_num == 3}-->
-                id="three_maincolumn col-xs-9 col-md-12"
+                id="three_maincolumn col-lg-9 col-md-12"
             <!--{elseif $tpl_column_num == 2}-->
                 <!--{if $arrPageLayout.LeftNavi|@count == 0}-->
-                    id="two_maincolumn_left col-xs-6 col-md-12"
+                    id="two_maincolumn_left col-lg-6 col-md-12"
                 <!--{else}-->
-                    id="two_maincolumn_right col-xs-6 col-md-12"
+                    id="two_maincolumn_right col-lg-6 col-md-12"
                 <!--{/if}-->
             <!--{elseif $tpl_column_num == 1}-->
                 id="one_maincolumn"
@@ -149,7 +149,7 @@
 
         <!--{* ▼RIGHT COLUMN *}-->
         <!--{if $arrPageLayout.RightNavi|@count > 0}-->
-            <div id="rightcolumn" class="side_column col-xs-3 col-md-12">
+            <div id="rightcolumn" class="side_column col-lg-3 col-md-12">
                 <!--{* ▼右ナビ *}-->
                 <!--{foreach key=RightNaviKey item=RightNaviItem from=$arrPageLayout.RightNavi}-->
                     <!-- ▼<!--{$RightNaviItem.bloc_name}--> -->
@@ -167,7 +167,7 @@
 
         <!--{* ▼BOTTOM COLUMN*}-->
         <!--{if $arrPageLayout.BottomNavi|@count > 0}-->
-            <div id="bottomcolumn class="col-xs-12 col-md-12"">
+            <div id="bottomcolumn class="col-lg-12 col-md-12"">
                 <!--{* ▼下ナビ *}-->
                 <!--{foreach key=BottomNaviKey item=BottomNaviItem from=$arrPageLayout.BottomNavi}-->
                     <!-- ▼<!--{$BottomNaviItem.bloc_name}--> -->
