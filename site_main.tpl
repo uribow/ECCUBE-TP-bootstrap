@@ -20,6 +20,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
 <body>
+<div class="row">
 <div class="container">
 
 <!--{* A8タグ表示用 *}-->
@@ -208,5 +209,6 @@
     <!--{/if}-->
     <!--{* ▲FooterBottom COLUMN*}-->
 </div>
+</div><!--<end class row-->
 </div><!--<end class container-->
 </body>
