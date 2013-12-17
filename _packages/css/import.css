@@ -3,7 +3,7 @@
 /************************************************
  import css (ポップアップ用)
 ************************************************ */
-@import url("./set.css");
+/*@import url("./set.css");
 @import url("./common.css");
 @import url("./contents.css");
 @import url("./table.css");
@@ -11,6 +11,6 @@
 @import url("./bloc_alpha.css");
 @import url("./popup_import.css");
 
-@import url("./bootstrap.min.css");
+@import url("./bootstrap.min.css");*/
 
 @import url("./print.css");
