@@ -1,7 +1,7 @@
 test
 ====
 
-<a href="/noboo/test/archive/master.tar.gz"
+<a href="https://github.com/noboo/test/archive/master.tar.gz"
                  class="minibutton sidebar-button"
                  title="Download this repository as a zip file"
                  rel="nofollow">
