@@ -101,12 +101,12 @@
         <!--{* ▼CENTER COLUMN *}-->
         <div 
             <!--{if $tpl_column_num == 3}-->
-                id="three_maincolumn col-lg-9 col-md-12"
+                id="three_maincolumn col-lg-6 col-md-12"
             <!--{elseif $tpl_column_num == 2}-->
                 <!--{if $arrPageLayout.LeftNavi|@count == 0}-->
-                    id="two_maincolumn_left col-lg-6 col-md-12"
+                    id="two_maincolumn_left col-lg-9 col-md-12"
                 <!--{else}-->
-                    id="two_maincolumn_right col-lg-6 col-md-12"
+                    id="two_maincolumn_right col-lg-9 col-md-12"
                 <!--{/if}-->
             <!--{elseif $tpl_column_num == 1}-->
                 id="one_maincolumn"
