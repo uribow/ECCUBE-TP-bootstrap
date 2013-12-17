@@ -20,6 +20,8 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
 <body>
+<div class="container">
+
 <!--{* A8タグ表示用 *}-->
 <!--{if "sfPrintA8Tag"|function_exists === TRUE}-->
     <!--{include file=`$smarty.const.MODULE_REALDIR`mdl_a8/print_a8_tag.tpl}-->
@@ -206,5 +208,5 @@
     <!--{/if}-->
     <!--{* ▲FooterBottom COLUMN*}-->
 </div>
-
+</div><!--<end class container-->
 </body>
