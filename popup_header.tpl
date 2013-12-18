@@ -31,7 +31,6 @@
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/win_op.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/site.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="<!--{$TPL_URLPATH}-->js/bootstrap.min.js"></script>
 <title><!--{$arrSiteInfo.shop_name}-->/<!--{$subtitle|h}--></title>
 <script type="text/javascript">//<![CDATA[
     <!--{$tpl_javascript}-->
