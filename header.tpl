@@ -20,16 +20,30 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA    02111-1307, USA.
  *}-->
 <!--▼HEADER-->
-<div id="header_wrap">
-    <div id="header" class="clearfix">
-        <div id="logo_area">
-            <p id="site_description">EC-CUBEは日本発のオープンソースECサイト構築システムです。</p>
-            <h1>
-                <a href="<!--{$smarty.const.TOP_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/common/logo.jpg" alt="EC-CUBE ONLINE SHOPPING SITE" /><span><!--{$arrSiteInfo.shop_name|h}-->/<!--{$tpl_title|h}--></span></a>
-            </h1>
-        </div>
-        <div id="header_utility">
-            <div id="headerInternalColumn">
+<h1><!--{$arrSiteInfo.shop_name|h}--> <!--{$tpl_title|h}--></h1>
+<nav class="navbar navbar-inverse" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="<!--{$smarty.const.TOP_URLPATH}-->"><span class="glyphicon glyphicon-home"></span></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+　
+            
+
+<ul class="nav navbar-nav navbar-right">
+
+            
+        <li>
+       
+            
             <!--{* ▼HeaderInternal COLUMN*}-->
             <!--{if $arrPageLayout.HeaderInternalNavi|@count > 0}-->
                 <!--{* ▼上ナビ *}-->
@@ -45,10 +59,11 @@
                 <!--{* ▲上ナビ *}-->
             <!--{/if}-->
             <!--{* ▲HeaderInternal COLUMN*}-->
-            </div>
-            <div id="header_navi">
-                <ul>
-                    <li class="mypage">
+          </li>
+</ul>
+<ul class="nav navbar-nav">
+
+ <li class="mypage">
                         <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php">MYページ</a>
                     </li>
                     <li class="entry">
@@ -57,10 +72,11 @@
                     <li>
                         <a href="<!--{$smarty.const.CART_URLPATH}-->">カゴの中を見る</a>
                     </li>
-                </ul>
+                
+       
 
-            </div>
-        </div>
-    </div>
-</div>
+
+</ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
 <!--▲HEADER-->
