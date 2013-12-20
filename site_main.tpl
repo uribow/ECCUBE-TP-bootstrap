@@ -149,7 +149,7 @@
 
         <!--{* ▼RIGHT COLUMN *}-->
         <!--{if $arrPageLayout.RightNavi|@count > 0}-->
-            <div id="rightcolumn" class="side_column" class="col-lg-3 col-md-12">
+            <div id="rightcolumn" class="side_column col-lg-3 col-md-12">
                 <!--{* ▼右ナビ *}-->
                 <!--{foreach key=RightNaviKey item=RightNaviItem from=$arrPageLayout.RightNavi}-->
                     <!-- ▼<!--{$RightNaviItem.bloc_name}--> -->
