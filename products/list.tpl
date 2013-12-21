@@ -141,10 +141,13 @@ function fnInCart(productForm) {
                 <!--{if $tpl_linemax > 0}--><!--{$smarty.capture.page_navi_body|smarty:nodefaults}--><!--{/if}-->
             </form>
             <!--▲ページナビ(上部)-->
+<div class="row heightLineParent">
         <!--{/if}-->
 
         <!--{assign var=id value=$arrProduct.product_id}-->
         <!--{assign var=arrErr value=$arrProduct.arrErr}-->
+<div class="col-lg-3 col-md-12">
+
         <!--▼商品-->
         <form name="product_form<!--{$id|h}-->" action="?" onsubmit="return false;">
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
@@ -256,10 +259,10 @@ function fnInCart(productForm) {
             </div>
         </div>
         </form>
-        <!--▲商品-->
+ </div>       <!--▲商品-->
 
         <!--{if $smarty.foreach.arrProducts.last}-->
-            <!--▼ページナビ(下部)-->
+ </div>           <!--▼ページナビ(下部)-->
             <form name="page_navi_bottom" id="page_navi_bottom" action="?">
                 <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
                 <!--{if $tpl_linemax > 0}--><!--{$smarty.capture.page_navi_body|smarty:nodefaults}--><!--{/if}-->
