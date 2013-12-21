@@ -30,7 +30,7 @@
 
         <!--{section name=cnt loop=$arrBestProducts step=4}-->
  <div class="row">
- <div class="col-lg-3 col-md-12">
+ <div class="col-md-3 col-xs-12">
            
                 <div class="productImage">
                     <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrBestProducts[cnt].product_id|u}-->">
@@ -48,7 +48,7 @@
                     <p class="mini comment"><!--{$arrBestProducts[cnt].comment|h|nl2br}--></p>
                 </div>
             </div>
-<div class="col-lg-3 col-md-12">
+<div class="col-md-3 col-xs-12">
                 <div class="productImage">
                     <!--{assign var=cnt2 value=`$smarty.section.cnt.iteration*$smarty.section.cnt.step-3`}-->
                     <!--{if $arrBestProducts[$cnt2]|count > 0}-->
@@ -74,7 +74,7 @@
 
         </div>   
 
-<div class="col-lg-3 col-md-12">
+<div class="col-md-3 col-xs-12">
                 <div class="productImage">
                     <!--{assign var=cnt3 value=`$smarty.section.cnt.iteration*$smarty.section.cnt.step-2`}-->
                     <!--{if $arrBestProducts[$cnt3]|count > 0}-->
@@ -100,7 +100,7 @@
 
         </div>
 
-            <div class="col-lg-3 col-md-12">
+            <div class="col-md-3 col-xs-12">
                 <div class="productImage">
                     <!--{assign var=cnt4 value=`$smarty.section.cnt.iteration*$smarty.section.cnt.step-1`}-->
                     <!--{if $arrBestProducts[$cnt4]|count > 0}-->
