@@ -25,11 +25,12 @@
     });
 //]]>
 </script>
-<div class="bloc_outer">
-    <div id="category_area">
-        <div class="bloc_body">
-            <h2><span class="square">■</span>商品カテゴリー</h2>
+<div class="panel panel-default">
+    
+        
+           <div class="panel-heading"> <h2><span class="square">■</span>商品カテゴリー</h2></div>
             <!--{strip}-->
+<div class="panel-body">
                 <ul id="categorytree">
                     <!--{assign var=preLev value=1}-->
                     <!--{assign var=firstdone value=0}-->
@@ -72,5 +73,5 @@
                 </ul>
             <!--{/strip}-->
         </div>
-    </div>
+   
 </div>

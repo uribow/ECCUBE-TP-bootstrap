@@ -19,10 +19,9 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<div class="bloc_outer">
-    <div id="search_area">
-    <h2><span class="title"><span class="square">■</span>検索条件</span></h2>
-        <div class="bloc_body">
+<div class="panel panel-default">
+    <div class="panel-heading"><h2><span class="square">■</span>検索条件</h2></div>
+  <div class="panel-body">
             <!--検索フォーム-->
             <form name="search_form" id="search_form" method="get" action="<!--{$smarty.const.ROOT_URLPATH}-->products/list.php">
             <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
@@ -52,5 +51,5 @@
             <p class="btn"><input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_bloc_search_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_bloc_search.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_bloc_search.jpg" alt="検索" name="search" /></p>
             </form>
         </div>
-    </div>
+    
 </div>

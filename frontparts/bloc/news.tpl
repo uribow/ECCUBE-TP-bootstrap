@@ -19,13 +19,13 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<div class="bloc_outer">
-    <div id="news_area">
-    <div class="title_news">
-      <h2><span class="square">■</span>新着情報</h2>
+<div class="panel panel-default">
+    
+    
+      <div class="panel-heading"><h2><span class="square">■</span>新着情報</h2></div>
 						<p class="rss"><a href="<!--{$smarty.const.ROOT_URLPATH}-->rss/<!--{$smarty.const.DIR_INDEX_PATH}-->" target="_blank"><img src="<!--{$TPL_URLPATH}-->img/button/btn_rss.jpg"alt="RSS" /></a></p>
-    </div>
-        <div class="bloc_body">
+    
+         <div class="panel-body">
             <div class="news_contents">
             <!--{section name=data loop=$arrNews}-->
             <!--{assign var="date_array" value="-"|explode:$arrNews[data].news_date_disp}-->
@@ -44,5 +44,5 @@
             <!--{/section}-->
             </div>
         </div>
-    </div>
+    
 </div>

@@ -19,9 +19,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<div class="bloc_outer">
-    <div id="login_area">
-        <h2><span class="square">■</span>ログイン</h2>
+<div class="panel panel-default">
+    
+        <div class="panel-heading"><h2><span class="square">■</span>ログイン</h2></div>
+  <div class="panel-body">
         <form name="login_form" id="login_form" method="post" action="<!--{$smarty.const.HTTPS_URL}-->frontparts/login_check.php" onsubmit="return fnCheckLogin('login_form')">
             <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
             <input type="hidden" name="mode" value="login" />
@@ -63,5 +64,5 @@
                 <!--{/if}-->
             </div>
         </form>
-    </div>
+   </div>
 </div>

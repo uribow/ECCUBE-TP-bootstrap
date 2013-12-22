@@ -19,10 +19,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<div class="bloc_outer">
-    <div id="cart_area">
-    <h2 class="cart"><span class="title"><span class="square">■</span>現在のカゴの中</span></h2>
-        <div class="bloc_body">
+<div class="panel panel-default">
+    
+    <div class="panel-heading"><h2 class="cart"><span class="title"><span class="square">■</span>現在のカゴの中</span></h2></div>
+  <div class="panel-body">
             <div class="information">
                 <p class="item">合計数量：<span class="attention"><!--{$arrCartList.0.TotalQuantity|number_format|default:0}--></span></p>
                 <p class="total">商品金額：<span class="price"><!--{$arrCartList.0.ProductsTotal|number_format|default:0}-->円</span></p>
@@ -44,5 +44,5 @@
                 <a href="<!--{$smarty.const.CART_URLPATH}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_bloc_cart_on.jpg','button_cart');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_bloc_cart.jpg','button_cart');"><img src="<!--{$TPL_URLPATH}-->img/button/btn_bloc_cart.jpg" alt="カゴの中を見る" border="0" name="button_cart" id="button_cart" /></a>
             </div>
         </div>
-    </div>
+    
 </div>
