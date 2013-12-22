@@ -1,5 +1,7 @@
-test
+bootstrap3
 ====
+EC-cubeのプレーンテンプレートにbootstrap3を導入中です。
+現在製作中。
 
 <a href="https://github.com/noboo/test/archive/master.tar.gz"
                  class="minibutton sidebar-button"
