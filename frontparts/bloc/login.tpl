@@ -44,7 +44,7 @@
                     <dl class="formlist">
                         <dt>メールアドレス</dt>
                         <dd>
-                            <input type="text" name="login_email" class="box140" value="<!--{$tpl_login_email|h}-->" style="ime-mode: disabled;" />
+                            <input type="text" name="login_email" class="box140 form-control"" value="<!--{$tpl_login_email|h}-->" style="ime-mode: disabled;" />
                         </dd>
                         <dd class="mini">
                             <input type="checkbox" name="login_memory" id="login_memory" value="1" <!--{$tpl_login_memory|sfGetChecked:1}--> />
@@ -53,7 +53,7 @@
                     </dl>
                     <dl class="formlist">
                         <dt class="password">パスワード</dt>
-                        <dd><input type="password" name="login_pass" class="box140" /></dd>
+                        <dd><input type="password" name="login_pass" class="box140 form-control"" /></dd>
                         <dd class="mini">
                         <a href="<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->" onclick="win01('<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->','forget','600','400'); return false;" target="_blank">パスワードを忘れた方はこちら</a>
                         </dd>

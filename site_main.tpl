@@ -33,7 +33,7 @@
     <p>JavaScript を有効にしてご利用下さい.</p>
 </noscript>
 
-<div class="frame_outer">
+
     <a name="top" id="top"></a>
 
     <!--{* ▼HeaderHeaderTop COLUMN*}-->
@@ -183,7 +183,7 @@
         <!--{/if}-->
         <!--{* ▲BOTTOM COLUMN*}-->
 
-    </div>
+    
     <!--{* ▲CONTENTS *}-->
 
     <!--{* ▼FOOTER *}-->
@@ -193,7 +193,7 @@
     <!--{* ▲FOOTER *}-->
     <!--{* ▼FooterBottom COLUMN*}-->
     <!--{if $arrPageLayout.FooterBottomNavi|@count > 0}-->
-        <div id="footerbottomcolumn">
+        <footer>
             <!--{* ▼上ナビ *}-->
             <!--{foreach key=FooterBottomNaviKey item=FooterBottomNaviItem from=$arrPageLayout.FooterBottomNavi}-->
                 <!-- ▼<!--{$FooterBottomNaviItem.bloc_name}--> -->
@@ -205,7 +205,7 @@
                 <!-- ▲<!--{$FooterBottomNaviItem.bloc_name}--> -->
             <!--{/foreach}-->
             <!--{* ▲上ナビ *}-->
-        </div>
+        </fotter>
     <!--{/if}-->
     <!--{* ▲FooterBottom COLUMN*}-->
 </div>

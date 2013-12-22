@@ -19,7 +19,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<div class="panel panel-default">
+<aside class="panel panel-default">
 <div class="panel-heading">
     <h2><span class="square">■</span>営業カレンダー</h2>
 </div>
@@ -57,4 +57,4 @@
         </div>
 
   </div>
-</div>
+</aside>

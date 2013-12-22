@@ -28,7 +28,7 @@
             <dl class="formlist">
                 <dt>商品カテゴリから選ぶ</dt>
                 <dd><input type="hidden" name="mode" value="search" />
-                <select name="category_id" class="box145">
+                <select name="category_id" class="box145 form-control">
                     <option label="すべての商品" value="">全ての商品</option>
                     <!--{html_options options=$arrCatList selected=$category_id}-->
                 </select>
@@ -46,7 +46,7 @@
             <dl class="formlist">
                 <!--{/if}-->
                 <dt>商品名を入力</dt>
-                <dd><input type="text" name="name" class="box140" maxlength="50" value="<!--{$smarty.get.name|h}-->" /></dd>
+                <dd><input type="text" name="name" class="box140 form-control" maxlength="50" value="<!--{$smarty.get.name|h}-->" /></dd>
             </dl>
             <p class="btn"><input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_bloc_search_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_bloc_search.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_bloc_search.jpg" alt="検索" name="search" /></p>
             </form>

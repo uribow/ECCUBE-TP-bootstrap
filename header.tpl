@@ -20,7 +20,11 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA    02111-1307, USA.
  *}-->
 <!--▼HEADER-->
+<header>
+<hgroup>
 <h1><!--{$arrSiteInfo.shop_name|h}--> <!--{$tpl_title|h}--></h1>
+</hgroup>
+</header>
 <nav class="navbar navbar-inverse" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">

@@ -19,10 +19,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<div class="panel panel-default">
+<aside class="panel panel-default">
     <div class="panel-body">
         <!--{strip}-->
-        <ul class="button_like">
+        <ul class="nav nav-pills nav-stacked">
         <li>
             <a href="<!--{$smarty.const.ROOT_URLPATH}-->abouts/<!--{$smarty.const.DIR_INDEX_PATH}-->" class="<!--{if $tpl_page_category == "abouts"}--> selected<!--{/if}-->"
             >当サイトについて</a></li>
@@ -39,4 +39,4 @@
         <!--{/strip}-->
         <div style="height: 0px; overflow: hidden;"></div><!--{* IE6ハック(背景乱れ防止) *}-->
     </div>
-</div>
+</aside>

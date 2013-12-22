@@ -25,13 +25,13 @@
     });
 //]]>
 </script>
-<div class="panel panel-default">
+<aside class="panel panel-default">
     
         
            <div class="panel-heading"> <h2><span class="square">■</span>商品カテゴリー</h2></div>
             <!--{strip}-->
 <div class="panel-body">
-                <ul id="categorytree">
+                <ul class="nav nav-pills nav-stacked">
                     <!--{assign var=preLev value=1}-->
                     <!--{assign var=firstdone value=0}-->
                     <!--{section name=cnt loop=$arrTree}-->
@@ -51,9 +51,9 @@
                                     </li>
                                 <!--{/if}-->
                             <li class="level<!--{$level}--><!--{if in_array($arrTree[cnt].category_id, $tpl_category_id)}--> onmark<!--{/if}-->">
-                                <p>
+                                
                                     <a href="<!--{$smarty.const.ROOT_URLPATH}-->products/list.php?category_id=<!--{$arrTree[cnt].category_id}-->"<!--{if in_array($arrTree[cnt].category_id, $tpl_category_id)}--> class="onlink"<!--{/if}-->><!--{$arrTree[cnt].category_name|h}-->(<!--{$arrTree[cnt].product_count|default:0}-->)</a>
-                                </p>
+                                
                             <!--{if $firstdone == 0}--><!--{assign var=firstdone value=1}--><!--{/if}-->
                             <!--{assign var=preLev value=`$level`}-->
                         <!--{/if}-->
@@ -74,4 +74,4 @@
             <!--{/strip}-->
         </div>
    
-</div>
+</aside>
