@@ -1,4 +1,4 @@
-<!--{printXMLDeclaration}--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--{printXMLDeclaration}--><!DOCTYPE html>
 <!--{*
  * This file is part of EC-CUBE
  *
@@ -20,27 +20,27 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=<!--{$smarty.const.CHAR_CODE}-->" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/import.css" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="<!--{$smarty.const.CHAR_CODE}-->">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/import.css" media="all" />
 <link rel="alternate" type="application/rss+xml" title="RSS" href="<!--{$smarty.const.HTTP_URL}-->rss/<!--{$smarty.const.DIR_INDEX_PATH}-->" />
 <!--{if $tpl_page_category == "abouts"}-->
 <!--{if ($smarty.server.HTTPS != "") && ($smarty.server.HTTPS != "off")}-->
-<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 <!--{else}-->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <!--{/if}-->
 <!--{/if}-->
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/css.js"></script>
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/navi.js"></script>
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/win_op.js"></script>
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/site.js"></script>
-<script type="text/javascript" src="<!--{$TPL_URLPATH}-->js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="<!--{$TPL_URLPATH}-->js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<!--{$TPL_URLPATH}-->js/heightLine.js"></script>
+<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/css.js"></script>
+<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/navi.js"></script>
+<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/win_op.js"></script>
+<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/site.js"></script>
+<script src="<!--{$TPL_URLPATH}-->js/jquery-1.10.2.min.js"></script>
+<script src="<!--{$TPL_URLPATH}-->js/bootstrap.min.js"></script>
+<script src="<!--{$TPL_URLPATH}-->js/heightLine.js"></script>
 <title><!--{$arrSiteInfo.shop_name|h}--><!--{if $tpl_subtitle|strlen >= 1}--> / <!--{$tpl_subtitle|h}--><!--{elseif $tpl_title|strlen >= 1}--> / <!--{$tpl_title|h}--><!--{/if}--></title>
 <!--{if $arrPageLayout.author|strlen >= 1}-->
     <meta name="author" content="<!--{$arrPageLayout.author|h}-->" />
@@ -52,7 +52,7 @@
     <meta name="keywords" content="<!--{$arrPageLayout.keyword|h}-->" />
 <!--{/if}-->
 
-<script type="text/javascript">//<![CDATA[
+<script>//<![CDATA[
     <!--{$tpl_javascript}-->
     $(function(){
         <!--{$tpl_onload}-->

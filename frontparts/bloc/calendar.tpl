@@ -29,6 +29,7 @@
                 <!--{assign var=arrCal value=`$arrCalendar[num]`}-->
                 <!--{section name=cnt loop=$arrCal}-->
                     <!--{if $smarty.section.cnt.first}-->
+                    <div class="table-responsive">
                         <table class="table">
                             <caption class="month"><!--{$arrCal[cnt].year}-->年<!--{$arrCal[cnt].month}-->月の定休日</caption>
                             <thead><tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr></thead>
@@ -49,6 +50,7 @@
                 <!--{/section}-->
                 <!--{if $smarty.section.cnt.last}-->
                     </table>
+                    </div>
                 <!--{/if}-->
             <!--{/section}-->
             <p class="information">※赤字は休業日です</p>
