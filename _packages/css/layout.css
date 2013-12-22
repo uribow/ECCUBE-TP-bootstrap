@@ -5,3 +5,5 @@ height: auto;
 h1,h2,h3{font-size:15px;
 margin-top: 0px;
  margin-bottom: 0px;}
+body{
+background: url("../imges/dust.png");}
