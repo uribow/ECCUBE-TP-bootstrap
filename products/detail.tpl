@@ -41,11 +41,14 @@ $(document).ready(function() {
 </script>
 
 <!--▼CONTENTS-->
+<div class="row">
+
 <div id="undercolumn">
     <form name="form1" id="form1" method="post" action="?">
     <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
     <div id="detailarea" class="clearfix">
         <div id="detailphotobloc">
+        <div class="col-xs-12 col-md-4">
             <div class="photo">
                 <!--{assign var=key value="main_image"}-->
                 <!--★画像★-->
@@ -73,7 +76,9 @@ $(document).ready(function() {
                 </span>
             <!--{/if}-->
         </div>
+</div>
 
+<div class="col-xs-12 col-md-8">
         <div id="detailrightbloc">
             <!--▼商品ステータス-->
             <!--{assign var=ps value=$productStatus[$smarty.get.product_id]}-->
@@ -271,6 +276,7 @@ $(document).ready(function() {
     </div>
     <!--▲買い物かご-->
 </div>
+</div><!--end col-8-->
 </form>
 
     <!--詳細ここまで-->
@@ -402,4 +408,5 @@ $(document).ready(function() {
     <!--▲関連商品-->
 
 </div>
+</div><!--end row-->
 <!--▲CONTENTS-->

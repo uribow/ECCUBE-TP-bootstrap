@@ -40,9 +40,7 @@
                 </p>
                 <!--{/if}-->
             </div>
-            <div class="btn">
-                <a href="<!--{$smarty.const.CART_URLPATH}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_bloc_cart_on.jpg','button_cart');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_bloc_cart.jpg','button_cart');"><img src="<!--{$TPL_URLPATH}-->img/button/btn_bloc_cart.jpg" alt="カゴの中を見る" border="0" name="button_cart" id="button_cart" /></a>
-            </div>
+                <a href="<!--{$smarty.const.CART_URLPATH}-->" class="btn btn-default">カゴの中を見る</a>
         </div>
     
 </div>

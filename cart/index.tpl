@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     <!--{if count($cartItems) > 0}-->
     <!--{foreach from=$cartKeys item=key}-->
-    <div class="form_area">
+    <div class="form_area ">
         <form name="form<!--{$key}-->" id="form<!--{$key}-->" method="post" action="?">
             <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
             <input type="hidden" name="mode" value="confirm" />
@@ -104,8 +104,8 @@ $(document).ready(function() {
                     <!--{/if}-->
                 </p>
             <!--{/if}-->
-
-            <table summary="商品情報">
+<div class="table-responsive">
+            <table summary="商品情報" class="table table-bordered">
                 <colgroup width="10%"></colgroup>
                 <colgroup width="15%"></colgroup>
                 <colgroup width="30%"></colgroup>
@@ -173,6 +173,7 @@ $(document).ready(function() {
                     </tr>
                 <!--{/if}-->
             </table>
+            </div>
                 <!--{if strlen($tpl_error) == 0}-->
                     <p class="alignC">上記内容でよろしければ「購入手続きへ」ボタンをクリックしてください。</p>
                 <!--{/if}-->
@@ -180,14 +181,14 @@ $(document).ready(function() {
                 <ul>
                     <li>
                         <!--{if $tpl_prev_url != ""}-->
-                            <a href="<!--{$tpl_prev_url|h}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back<!--{$key}-->');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back<!--{$key}-->');">
-                                <img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" name="back<!--{$key}-->" /></a>
+                            <a href="<!--{$tpl_prev_url|h}-->" class="btn btn-default">戻る</a>
                         <!--{/if}-->
                     </li>
                     <li>
                         <!--{if strlen($tpl_error) == 0}-->
                             <input type="hidden" name="cartKey" value="<!--{$key}-->" />
                             <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_buystep_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_buystep.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_buystep.jpg" alt="購入手続きへ" name="confirm" />
+                            <button type="submit" class="btn btn-default" name="confirm">購入手続きへ</button>
                         <!--{/if}-->
                     </li>
                 </ul>

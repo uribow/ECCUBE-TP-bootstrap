@@ -88,10 +88,10 @@ function fnInCart(productForm) {
 
     <!--▼検索条件-->
     <!--{if $tpl_subtitle == "検索結果"}-->
-        <ul class="pagecond_area">
-            <li><strong>商品カテゴリ：</strong><!--{$arrSearch.category|h}--></li>
+        <ul class="nav nav-pills">
+            <li><strong>商品カテゴリ:</strong><!--{$arrSearch.category|h}--></li>
         <!--{if $arrSearch.maker|strlen >= 1}--><li><strong>メーカー：</strong><!--{$arrSearch.maker|h}--></li><!--{/if}-->
-            <li><strong>商品名：</strong><!--{$arrSearch.name|h}--></li>
+            <li><strong>商品名:</strong><!--{$arrSearch.name|h}--></li>
         </ul>
     <!--{/if}-->
     <!--▲検索条件-->
@@ -155,19 +155,19 @@ function fnInCart(productForm) {
             <a name="product<!--{$id|h}-->"></a>
             <div class="listphoto">
                 <!--★画像★-->
-                <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->" class="over"><!--商品写真--><img src="<!--{$smarty.const.IMAGE_SAVE_URLPATH|sfTrimURL}-->/<!--{$arrProduct.main_image|sfNoImageMainList|h}-->" alt="<!--{$arrProduct.name|h}-->" class="picture" /></a>
+                <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->" class="over"><!--商品写真--><img src="<!--{$smarty.const.IMAGE_SAVE_URLPATH|sfTrimURL}-->/<!--{$arrProduct.main_image|sfNoImageMainList|h}-->" alt="<!--{$arrProduct.name|h}-->" class="picture img-thumbnail" /></a>
             </div>
 
             <div class="listrightbloc">
                 <!--▼商品ステータス-->
                 <!--{if count($productStatus[$id]) > 0}-->
-                    <ul class="status_icon clearfix">
+                    
                         <!--{foreach from=$productStatus[$id] item=status}--> 
-                            <li>
-                                <img src="<!--{$TPL_URLPATH}--><!--{$arrSTATUS_IMAGE[$status]}-->" width="60" height="17" alt="<!--{$arrSTATUS[$status]}-->" />
-                            </li>
+                            
+                                <button type="button" class="btn btn-info btn-xs btn-block" disabled="disabled"><!--{$arrSTATUS[$status]}--></button>
+                            
                         <!--{/foreach}-->
-                    </ul>
+                    
                 <!--{/if}-->
                 <!--▲商品ステータス-->
 
@@ -190,13 +190,12 @@ function fnInCart(productForm) {
                 </div>
 
                 <!--★コメント★-->
-                <div class="listcomment"><!--{$arrProduct.main_list_comment|h|nl2br}--></div>
+                <div class="listcomment"><small><!--{$arrProduct.main_list_comment|h|nl2br}--></small></div>
 
                 <!--★商品詳細を見る★-->
                 <div class="detail_btn">
                     <!--{assign var=name value="detail`$id`"}-->
-                    <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_detail_on.jpg','<!--{$name}-->');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_detail.jpg','<!--{$name}-->');">
-                    <img src="<!--{$TPL_URLPATH}-->img/button/btn_detail.jpg" alt="商品詳細を見る" name="<!--{$name}-->" id="<!--{$name}-->" /></a>
+                    <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->"  type="button" class="btn btn-default">商品詳細を見る</a>
                 </div>
 
                 <!--▼買い物かご-->
@@ -238,7 +237,7 @@ function fnInCart(productForm) {
                         <!--{/if}-->
                         <div class="cartin clearfix">
                             <div class="quantity">
-                                数量：<input type="text" name="quantity" class="box" value="<!--{$arrProduct.quantity|default:1|h}-->" maxlength="<!--{$smarty.const.INT_LEN}-->" style="<!--{$arrErr.quantity|sfGetErrorColor}-->" />
+                                数量：<input type="text" name="quantity" class="box form-control" value="<!--{$arrProduct.quantity|default:1|h}-->" maxlength="<!--{$smarty.const.INT_LEN}-->" style="<!--{$arrErr.quantity|sfGetErrorColor}-->" />
                                 <!--{if $arrErr.quantity != ""}-->
                                     <br /><span class="attention"><!--{$arrErr.quantity}--></span>
                                 <!--{/if}-->
@@ -246,7 +245,8 @@ function fnInCart(productForm) {
                             <div class="cartin_btn">
                                 <!--★カゴに入れる★-->
                                 <div id="cartbtn_default_<!--{$id}-->">
-                                    <input type="image" id="cart<!--{$id}-->" src="<!--{$TPL_URLPATH}-->img/button/btn_cartin.jpg" alt="カゴに入れる" onclick="fnInCart(this.form); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_cartin_on.jpg', this);" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_cartin.jpg', this);" />
+                                    
+                                    <button type="submit" class="btn btn-default" id="cart<!--{$id}-->" onclick="fnInCart(this.form); return false;">カゴに入れる</button>
                                 </div>
                                 <div class="attention" id="cartbtn_dynamic_<!--{$id}-->"></div>
                             </div>
