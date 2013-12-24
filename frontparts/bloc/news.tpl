@@ -23,7 +23,7 @@
     
     
       <div class="panel-heading"><h2><span class="square">■</span>新着情報</h2></div>
-						<p class="rss"><a href="<!--{$smarty.const.ROOT_URLPATH}-->rss/<!--{$smarty.const.DIR_INDEX_PATH}-->" target="_blank"><img src="<!--{$TPL_URLPATH}-->img/button/btn_rss.jpg"alt="RSS" /></a></p>
+						<p class="rss"><a href="<!--{$smarty.const.ROOT_URLPATH}-->rss/<!--{$smarty.const.DIR_INDEX_PATH}-->" class="btn btn-default">RSS</a></p>
     
          <div class="panel-body">
             <div class="news_contents">
