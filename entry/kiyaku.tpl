@@ -34,12 +34,10 @@
         <div class="btn_area">
             <ul>
                 <li>
-                    <a href="<!--{$smarty.const.TOP_URLPATH}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_entry_cannot_on.jpg','b_noagree');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_entry_cannot.jpg','b_noagree');">
-                        <img src="<!--{$TPL_URLPATH}-->img/button/btn_entry_cannot.jpg" alt="同意しない" border="0" name="b_noagree" /></a>
+                    <a href="<!--{$smarty.const.TOP_URLPATH}-->" class="btn btn-default">同意しない</a>
                 </li>
                 <li>
-                    <a href="<!--{$smarty.const.ENTRY_URL}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_entry_agree_on.jpg','b_agree');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_entry_agree.jpg','b_agree');">
-                <img src="<!--{$TPL_URLPATH}-->img/button/btn_entry_agree.jpg" alt="同意して会員登録へ" border="0" name="b_agree" /></a>
+                    <a href="<!--{$smarty.const.ENTRY_URL}-->" class="btn btn-default">同意して会員登録へ</a>
                 </li>
             </ul>
         </div>
