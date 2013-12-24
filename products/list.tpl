@@ -146,7 +146,7 @@ function fnInCart(productForm) {
 
         <!--{assign var=id value=$arrProduct.product_id}-->
         <!--{assign var=arrErr value=$arrProduct.arrErr}-->
-<div class="col-lg-3 col-md-12">
+<div class="col-xs-12 col-sm-6 col-md-3">
 
         <!--▼商品-->
         <form name="product_form<!--{$id|h}-->" action="?" onsubmit="return false;">
@@ -161,13 +161,13 @@ function fnInCart(productForm) {
             <div class="listrightbloc">
                 <!--▼商品ステータス-->
                 <!--{if count($productStatus[$id]) > 0}-->
-                    
+                   
                         <!--{foreach from=$productStatus[$id] item=status}--> 
                             
-                                <button type="button" class="btn btn-info btn-xs btn-block" disabled="disabled"><!--{$arrSTATUS[$status]}--></button>
+                               <span class="label label-default"><!--{$arrSTATUS[$status]}--></span>
                             
                         <!--{/foreach}-->
-                    
+                   
                 <!--{/if}-->
                 <!--▲商品ステータス-->
 
