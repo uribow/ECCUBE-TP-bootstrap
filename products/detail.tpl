@@ -83,10 +83,10 @@ $(document).ready(function() {
             <!--▼商品ステータス-->
             <!--{assign var=ps value=$productStatus[$smarty.get.product_id]}-->
             <!--{if count($ps) > 0}-->
-                <ul class="status_icon clearfix">
+                <ul class="nav nav-pills">
                     <!--{foreach from=$ps item=status}-->
                     <li>
-                        <img src="<!--{$TPL_URLPATH}--><!--{$arrSTATUS_IMAGE[$status]}-->" width="60" height="17" alt="<!--{$arrSTATUS[$status]}-->" id="icon<!--{$status}-->" />
+                        <span class="label label-default"><!--{$arrSTATUS[$status]}--></span>
                     </li>
                     <!--{/foreach}-->
                 </ul>
@@ -222,7 +222,7 @@ $(document).ready(function() {
 
                 <!--★数量★-->
                 <div class="quantity">
-                    <ul class="clearfix">
+                    <ul class="nav nav-pills">
                         <li>数量：</li>
                         <li><input type="text" class="box60" name="quantity" value="<!--{$arrForm.quantity.value|default:1|h}-->" maxlength="<!--{$smarty.const.INT_LEN}-->" style="<!--{$arrErr.quantity|sfGetErrorColor}-->" />
                             <!--{if $arrErr.quantity != ""}-->
@@ -236,8 +236,7 @@ $(document).ready(function() {
                     <div class="cartin_btn">
                         <div id="cartbtn_default">
                             <!--★カゴに入れる★-->
-                            <a href="javascript:void(document.form1.submit())" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_cartin_on.jpg','cart');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_cartin.jpg','cart');">
-                                <img src="<!--{$TPL_URLPATH}-->img/button/btn_cartin.jpg" alt="カゴに入れる" name="cart" id="cart" /></a>
+                            <a href="javascript:void(document.form1.submit())"class="btn btn-default">カゴに入れる</a>
                         </div>
                     </div>
                 </div>
