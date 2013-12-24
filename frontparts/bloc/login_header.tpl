@@ -1,6 +1,6 @@
 <!-- Button trigger modal -->
 <a class="btn btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
+ ログイン
 </a>
 
 <!-- Modal -->
@@ -9,7 +9,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">ログインする</h4>
       </div>
       <div class="modal-body">
 
@@ -54,7 +54,7 @@
 <div class="bloc_outer">
     <div id="header_login_area" class="clearfix">
         <form name="header_login_form" id="header_login_form" method="post" action="<!--{$smarty.const.HTTPS_URL}-->frontparts/login_check.php" onsubmit="return fnCheckLogin('header_login_form')">
-        <input type="hidden" name="mode" value="login" />
+        <input type="hidden" name="mode" value="login" class="form-control" />
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
         <input type="hidden" name="url" value="<!--{$smarty.server.PHP_SELF|h}-->" />
         <div class="bloc_body clearfix">
@@ -78,6 +78,7 @@
                     <li class="password"><input type="password" class="box100" name="login_pass" title="パスワードを入力して下さい" /></li>
                     <li class="btn">
                         <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/common/btn_header_login_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/common/btn_header_login.jpg',this)" src="<!--{$TPL_URLPATH}-->img/common/btn_header_login.jpg" />
+<button type="submit" class="btn btn-default">ログイン</button>
                     </li>
                     <li class="forgot">
                         <a href="<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->" onclick="win01('<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->','forget','600','400'); return false;" target="_blank">パスワードを忘れた方</a>
@@ -91,11 +92,10 @@
 </div>
 
 
-        ...
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
