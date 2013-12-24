@@ -167,12 +167,12 @@ $(document).ready(function() {
             <!--★関連カテゴリ★-->
             <div class="relative_cat">関連カテゴリ：
                 <!--{section name=r loop=$arrRelativeCat}-->
-                <p>
+                
                     <!--{section name=s loop=$arrRelativeCat[r]}-->
                     <a href="<!--{$smarty.const.ROOT_URLPATH}-->products/list.php?category_id=<!--{$arrRelativeCat[r][s].category_id}-->"><!--{$arrRelativeCat[r][s].category_name}--></a>
                     <!--{if !$smarty.section.s.last}--><!--{$smarty.const.SEPA_CATNAVI}--><!--{/if}-->
                     <!--{/section}-->
-                </p>
+                
                 <!--{/section}-->
             </div>
 
