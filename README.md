@@ -29,6 +29,10 @@ http://getbootstrap.com/
 <li>heightLine.js
 </ul>
 
+*レスポンシブにしたものの、スマフォにはスマフォ用のテンプレートが良いなと思いました。
+
+
+
 <a href="https://github.com/noboo/test/archive/master.tar.gz"
                  class="minibutton sidebar-button"
                  title="Download this repository as a tar.gz file"
