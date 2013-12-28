@@ -26,7 +26,7 @@ http://getbootstrap.com/
 <li>CSS3
 <li>レスポンシブ
 <li>jquery-1.10.2
-<li>heightLine.js
+<li><a href="https://github.com/to-r/jquery.heightLine.js">heightLine.js</a>
 </ul>
 
 *レスポンシブにしたものの、スマフォにはスマフォ用のテンプレートが良いなと思いました。
