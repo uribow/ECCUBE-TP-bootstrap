@@ -78,7 +78,7 @@ $(document).ready(function() {
         </div>
 </div>
 
-<div class="col-xs-12 col-md-8">
+<div class="col-xs-12 col-md-8 well">
         <div id="detailrightbloc">
             <!--▼商品ステータス-->
             <!--{assign var=ps value=$productStatus[$smarty.get.product_id]}-->
@@ -221,10 +221,12 @@ $(document).ready(function() {
                 <!--{/if}-->
 
                 <!--★数量★-->
+                <hr />
+                <div class="alert alert-info">
                 <div class="quantity">
-                    <ul class="nav nav-pills">
-                        <li>数量：</li>
-                        <li><input type="text" class="box60 form-control" name="quantity" value="<!--{$arrForm.quantity.value|default:1|h}-->" maxlength="<!--{$smarty.const.INT_LEN}-->" style="<!--{$arrErr.quantity|sfGetErrorColor}-->" />
+                    <ul>
+                        <li>数量</li>
+                        <li><input type="text" class="box60" name="quantity" value="<!--{$arrForm.quantity.value|default:1|h}-->" maxlength="<!--{$smarty.const.INT_LEN}-->" style="<!--{$arrErr.quantity|sfGetErrorColor}-->" />
                             <!--{if $arrErr.quantity != ""}-->
                                 <br /><span class="attention"><!--{$arrErr.quantity}--></span>
                             <!--{/if}-->
@@ -239,6 +241,7 @@ $(document).ready(function() {
                             <a href="javascript:void(document.form1.submit())"class="btn btn-default">カゴに入れる</a>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="attention" id="cartbtn_dynamic"></div>
             <!--{else}-->
