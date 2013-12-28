@@ -32,7 +32,7 @@
     <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
     <input type="hidden" name="mode" value="confirm" />
     <input type="hidden" name="product_id" value="<!--{$arrForm.product_id|h}-->" />
-    <table summary="お客様の声書き込み">
+    <table summary="お客様の声書き込み" class="table">
         <colgroup width="30%"></colgroup>
         <colgroup width="70%"></colgroup>
         <tr>
@@ -81,7 +81,8 @@
     </table>
     <div class="btn_area">
         <ul>
-            <li><input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg" alt="確認ページへ" name="conf" id="conf" /></li>
+            
+            <li><button type="submit" class="btn btn-default" name="conf" id="conf">確認ページへ</button></li>
         </ul>
     </div>
     </form>

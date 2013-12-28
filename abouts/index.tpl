@@ -55,7 +55,7 @@ $(function() {
     <div id="undercolumn_aboutus">
         <h2 class="title"><!--{$tpl_title|h}--></h2>
 
-        <table summary="当サイトについて">
+        <table summary="当サイトについて" class="table">
             <colgroup width="20%"></colgroup>
             <colgroup width="80%"></colgroup>
             <!--{if strlen($objSiteInfo->data.shop_name)}-->

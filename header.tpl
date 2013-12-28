@@ -34,7 +34,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="<!--{$smarty.const.TOP_URLPATH}-->"><span class="glyphicon glyphicon-home"></span></a>
+    <a class="navbar-brand" href="<!--{$smarty.const.TOP_URLPATH}-->"><span class="glyphicon glyphicon-home"></span> ホーム</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,13 +68,13 @@
 <ul class="nav navbar-nav">
 
  <li class="mypage">
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php">MYページ</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php"><span class="glyphicon glyphicon-user"></span> MYページ</a>
                     </li>
                     <li class="entry">
-                        <a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/kiyaku.php">会員登録</a>
+                        <a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/kiyaku.php"><span class="glyphicon glyphicon-heart-empty"></span> 会員登録</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.CART_URLPATH}-->">カゴの中を見る</a>
+                        <a href="<!--{$smarty.const.CART_URLPATH}-->"><span class="glyphicon glyphicon-shopping-cart"></span> カゴの中を見る</a>
                     </li>
                 
        

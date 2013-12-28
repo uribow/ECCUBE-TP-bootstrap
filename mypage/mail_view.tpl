@@ -1,6 +1,6 @@
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="MYページ/メール履歴詳細"}-->
 <div id="window_area">
-<table class="form">
+<table class="form table">
     <tr>
         <td><!--{$tpl_subject|h}--></td>
     </tr>

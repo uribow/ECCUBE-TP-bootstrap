@@ -37,12 +37,13 @@
                 <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
                 <p class="btn">
                     <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id|h}-->">
-                    <input type="image" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_order_re_on.jpg', this);" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_order_re.jpg', this);" src="<!--{$TPL_URLPATH}-->img/button/btn_order_re.jpg" alt="この購入内容で再注文する" name="submit" value="この購入内容で再注文する" />
+                    
+                    <button type="submit" class="btn btn-default" name="submit" value="この購入内容で再注文する">この購入内容で再注文する</button>
                 </p>
             </form>
         </div>
 
-        <table summary="購入商品詳細">
+        <table summary="購入商品詳細" class="table">
             <colgroup width="15%"></colgroup>
             <colgroup width="25%"></colgroup>
             <colgroup width="20%"></colgroup>
@@ -118,7 +119,7 @@
 
         <!-- 使用ポイントここから -->
         <!--{if $smarty.const.USE_POINT !== false}-->
-            <table summary="使用ポイント">
+            <table summary="使用ポイント" class="table">
                 <colgroup width="30%"></colgroup>
                 <colgroup width="70%"></colgroup>
                 <tr>
@@ -136,7 +137,7 @@
         <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
             <h3>お届け先<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
             <!--{if $isMultiple}-->
-                <table summary="お届け内容確認">
+                <table summary="お届け内容確認" class="table">
                     <colgroup width="30%"></colgroup>
                     <colgroup width="40%"></colgroup>
                     <colgroup width="20%"></colgroup>
@@ -172,7 +173,7 @@
                     <!--{/foreach}-->
                 </table>
             <!--{/if}-->
-            <table summary="お届け先" class="delivname">
+            <table summary="お届け先" class="delivname table">
                     <colgroup width="30%"></colgroup>
                     <colgroup width="70%"></colgroup>
                     <tr>
@@ -210,7 +211,7 @@
         <br />
 
         <h3>メール配信履歴一覧</h3>
-        <table>
+        <table class="table">
             <tr>
                 <th class="alignC">処理日</th>
                 <th class="alignC">通知メール</th>
@@ -229,7 +230,8 @@
         <div class="btn_area">
             <ul>
                 <li>
-                    <a href="./<!--{$smarty.const.DIR_INDEX_PATH}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','change');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','change');"><img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" name="change" id="change" /></a>
+                    <a href="./<!--{$smarty.const.DIR_INDEX_PATH}-->" name="change" id="change" />戻る</a>
+                    
                 </li>
             </ul>
         </div>

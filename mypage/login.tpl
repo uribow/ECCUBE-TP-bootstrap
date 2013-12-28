@@ -34,7 +34,7 @@
             <h3>会員登録がお済みのお客様</h3>
             <p class="inputtext">会員の方は、登録時に入力されたメールアドレスとパスワードでログインしてください。</p>
             <div class="inputbox">
-                <dl class="formlist clearfix">
+                <dl class="dl-horizontal">
                     <!--{assign var=key value="login_email"}-->
                     <span class="attention"><!--{$arrErr[$key]}--></span>
                     <dt>メールアドレス&nbsp;：</dt>
@@ -47,7 +47,7 @@
                         </p>
                     </dd>
                 </dl>
-                <dl class="formlist clearfix">
+                <dl class="dl-horizontal">
                     <dt>
                         <!--{assign var=key value="login_pass"}-->
                         <span class="attention"><!--{$arrErr[$key]}--></span>
@@ -60,7 +60,7 @@
                 <div class="btn_area">
                     <ul>
                         <li>
-                            <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_login_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_login.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_login.jpg" alt="ログイン" name="log" id="log" />
+                            
 <button type="submit" class="btn btn-default" name="log" id="log">ログイン</button>
                         </li>
                     </ul>

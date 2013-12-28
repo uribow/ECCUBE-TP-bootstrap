@@ -34,13 +34,14 @@
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
         <input type="hidden" name="mode" value="confirm" />
         <input type="hidden" name="customer_id" value="<!--{$arrForm.customer_id|h}-->" />
-        <table summary="会員登録内容変更 " class="delivname">
+        <table summary="会員登録内容変更 " class="table">
             <!--{include file="`$smarty.const.TEMPLATE_REALDIR`frontparts/form_personal_input.tpl" flgFields=3 emailMobile=true prefix=""}-->
         </table>
         <div class="btn_area">
             <ul>
                 <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg" alt="確認ページへ" name="refusal" id="refusal" />
+                    
+                    <button type="submit" class="btn btn-default"  name="refusal" id="refusal">確認ページへ</button>
                 </li>
             </ul>
         </div>

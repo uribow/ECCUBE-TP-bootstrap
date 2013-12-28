@@ -21,7 +21,7 @@
  *}-->
 <div class="panel panel-default">
     
-    <div class="panel-heading"><h2 class="cart"><span class="title"><span class="square">■</span>現在のカゴの中</span></h2></div>
+    <div class="panel-heading"><h2 class="cart"><span class="title"><span class="glyphicon glyphicon-th-large"></span> 現在のカゴの中</span></h2></div>
   <div class="panel-body">
             <div class="information">
                 <p class="item">合計数量：<span class="attention"><!--{$arrCartList.0.TotalQuantity|number_format|default:0}--></span></p>

@@ -24,7 +24,7 @@
 
  
      
-        <div class="panel-heading"><h2><span class="square">■</span>おすすめ商品情報</h2></div>
+        <div class="panel-heading"><h2><span class="glyphicon glyphicon-th-large"></span> おすすめ商品情報</h2></div>
 <div class="panel-body">
        
 
@@ -37,9 +37,9 @@
                         <img src="<!--{$smarty.const.ROOT_URLPATH}-->resize_image.php?image=<!--{$arrBestProducts[cnt].main_image|sfNoImageMainList|h}-->&amp;width=800&amp;height=800" alt="<!--{$arrBestProducts[cnt].name|h}-->" /></a>
                 
                 
-                    <h3><small>
+                    <h3>
                         <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrBestProducts[cnt].product_id|u}-->"><!--{$arrBestProducts[cnt].name|h}--></a>
-                    </h3></small>
+                    </h3>
                     <!--{assign var=price01 value=`$arrBestProducts[cnt].price01_min`}-->
                     <!--{assign var=price02 value=`$arrBestProducts[cnt].price02_min`}-->
                     <p class="sale_price"><!--{$smarty.const.SALE_PRICE_TITLE}-->(税込)：
@@ -57,9 +57,9 @@
                    <img src="<!--{$smarty.const.ROOT_URLPATH}-->resize_image.php?image=<!--{$arrBestProducts[$cnt2].main_image|sfNoImageMainList|h}-->&amp;width=800&amp;height=800" alt="<!--{$arrBestProducts[$cnt2].name|h}-->" /></a>
                 
                 
-                    <h3><small>
+                    <h3>
                         <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrBestProducts[$cnt2].product_id|u}-->"><!--{$arrBestProducts[$cnt2].name|h}--></a>
-                    </h3></small>
+                    </h3>
 
                     <!--{assign var=price01 value=`$arrBestProducts[$cnt2].price01_min`}-->
                     <!--{assign var=price02 value=`$arrBestProducts[$cnt2].price02_min`}-->
@@ -82,9 +82,9 @@
                     <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrBestProducts[$cnt3].product_id|u}-->">
                    <img src="<!--{$smarty.const.ROOT_URLPATH}-->resize_image.php?image=<!--{$arrBestProducts[$cnt3].main_image|sfNoImageMainList|h}-->&amp;width=800&amp;height=800" alt="<!--{$arrBestProducts[$cnt3].name|h}-->" /></a>
                 
-                    <h3><small>
+                    <h3>
                         <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrBestProducts[$cnt3].product_id|u}-->"><!--{$arrBestProducts[$cnt3].name|h}--></a>
-                    </h3></small>
+                    </h3>
 
                     <!--{assign var=price01 value=`$arrBestProducts[$cnt3].price01_min`}-->
                     <!--{assign var=price02 value=`$arrBestProducts[$cnt3].price02_min`}-->
@@ -107,9 +107,9 @@
                     <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrBestProducts[$cnt4].product_id|u}-->">
                    <img src="<!--{$smarty.const.ROOT_URLPATH}-->resize_image.php?image=<!--{$arrBestProducts[$cnt4].main_image|sfNoImageMainList|h}-->&amp;width=800&amp;height=800" alt="<!--{$arrBestProducts[$cnt4].name|h}-->" /></a>
                 
-                    <h3><small>
+                    <h3>
                         <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrBestProducts[$cnt4].product_id|u}-->"><!--{$arrBestProducts[$cnt4].name|h}--></a>
-                    </h3></small>
+                    </h3>
 
                     <!--{assign var=price01 value=`$arrBestProducts[$cnt4].price01_min`}-->
                     <!--{assign var=price02 value=`$arrBestProducts[$cnt4].price02_min`}-->

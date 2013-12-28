@@ -48,7 +48,8 @@
     </div>
     <div class="btn_area">
         <ul>
-            <li><input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" alt="次へ" name="next" id="next" />
+            <li>
+            <button type="submit" class="btn btn-default" name="next" id="next">次へ</button></li>
         </ul>
     </div>
     </form>

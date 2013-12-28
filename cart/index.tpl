@@ -187,7 +187,7 @@ $(document).ready(function() {
                     <li>
                         <!--{if strlen($tpl_error) == 0}-->
                             <input type="hidden" name="cartKey" value="<!--{$key}-->" />
-                            <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_buystep_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_buystep.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_buystep.jpg" alt="購入手続きへ" name="confirm" />
+                            
                             <button type="submit" class="btn btn-default" name="confirm">購入手続きへ</button>
                         <!--{/if}-->
                     </li>

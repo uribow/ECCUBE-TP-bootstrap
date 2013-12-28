@@ -20,7 +20,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
 <div class="panel panel-default">
-    <div class="panel-heading"><h2><span class="square">■</span>検索条件</h2></div>
+    <div class="panel-heading"><h2><span class="glyphicon glyphicon-th-large"></span> 検索条件</h2></div>
   <div class="panel-body">
             <!--検索フォーム-->
             <form name="search_form" id="search_form" method="get" action="<!--{$smarty.const.ROOT_URLPATH}-->products/list.php">

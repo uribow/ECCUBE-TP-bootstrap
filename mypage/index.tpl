@@ -47,7 +47,7 @@
               </ul>
 												</div>
 
-            <table summary="購入履歴">
+            <table summary="購入履歴" class="table">
                 <tr>
                     <th class="alignC">購入日時</th>
                     <th class="alignC">注文番号</th>

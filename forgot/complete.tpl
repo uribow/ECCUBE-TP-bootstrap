@@ -36,7 +36,8 @@
         </div>
         <div class="btn_area">
             <ul>
-                <li><a href="javascript:window.close()" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_close_on.jpg','close');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_close.jpg','close');"><img src="<!--{$TPL_URLPATH}-->img/button/btn_close.jpg" alt="閉じる" name="close" id="close" /></a></li>
+                <li><a href="javascript:window.close()" name="close" id="close" class="btn btn-default" />閉じる</a></li>
+                
             </ul>
         </div>
     </form>

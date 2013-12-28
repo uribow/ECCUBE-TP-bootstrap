@@ -49,7 +49,7 @@
 														</ul>
             </div>
 
-            <table summary="お気に入り">
+            <table summary="お気に入り" class="table">
                 <colgroup width="15%"></colgroup>
                 <colgroup width="20%"></colgroup>
                 <colgroup width="45%"></colgroup>

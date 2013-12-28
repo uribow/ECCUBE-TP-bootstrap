@@ -39,10 +39,11 @@
                     お届け先等の情報はすべてなくなりますのでご注意ください。</p>
                     <ul>
                         <li>
-                            <a href="./refusal.php" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_refuse_not_on.jpg','refuse_not');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_refuse_not.jpg','refuse_not');"><img src="<!--{$TPL_URLPATH}-->img/button/btn_refuse_not.jpg" alt="いいえ、退会しません" name="refuse_not" id="refuse_not" /></a>
+                            <a href="./refusal.php" name="refuse_not" id="refuse_not" class="btn btn-default"/>いいえ、退会しません</a>
                         </li>
                         <li>
-                            <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_refuse_do_on.jpg',this);" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_refuse_do.jpg',this);" src="<!--{$TPL_URLPATH}-->img/button/btn_refuse_do.jpg" alt="はい、退会します" name="refuse_do" id="refuse_do" />
+                            
+                            <button type="submit" class="btn btn-default" name="refuse_do" id="refuse_do">はい、退会します</button>
                         </li>
                     </ul>
                 </div>

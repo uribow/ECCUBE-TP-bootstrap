@@ -1,6 +1,6 @@
 <!-- Button trigger modal -->
-<a class="btn btn-lg" data-toggle="modal" data-target="#myModal">
- ログイン
+<a class="btn" data-toggle="modal" data-target="#myModal">
+ <span class="glyphicon glyphicon-star-empty"></span> ログイン
 </a>
 
 <!-- Modal -->
@@ -65,7 +65,8 @@
                     <!--{if $smarty.const.USE_POINT !== false}-->
                         / 所持ポイント: <span class="point"> <!--{$tpl_user_point|number_format|default:0}--> pt</span>&nbsp;&nbsp;
                     <!--{/if}--><!--{if !$tpl_disable_logout}-->
-                        <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/common/btn_header_logout_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/common/btn_header_logout.jpg',this)" src="<!--{$TPL_URLPATH}-->img/common/btn_header_logout.jpg" onclick="fnFormModeSubmit('header_login_form', 'logout', '', ''); return false;" alt="ログアウト" /><!--{/if}-->
+                    <button type="submit" class="btn btn-default" onclick="fnFormModeSubmit('header_login_form', 'logout', '', ''); return false;">ログアウト</button>
+                        <!--{/if}-->
                     </p>
             <!--{else}-->
                 <ul class="formlist clearfix">
@@ -77,7 +78,7 @@
                     </li>
                     <li class="password"><input type="password" class="box100" name="login_pass" title="パスワードを入力して下さい" /></li>
                     <li class="btn">
-                        <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/common/btn_header_login_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/common/btn_header_login.jpg',this)" src="<!--{$TPL_URLPATH}-->img/common/btn_header_login.jpg" />
+                        
 <button type="submit" class="btn btn-default">ログイン</button>
                     </li>
                     <li class="forgot">

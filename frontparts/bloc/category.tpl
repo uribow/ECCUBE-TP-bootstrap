@@ -28,7 +28,7 @@
 <aside class="panel panel-default">
     
         
-           <div class="panel-heading"> <h2><span class="square">■</span>商品カテゴリー</h2></div>
+           <div class="panel-heading"> <h2><span class="glyphicon glyphicon-th-large"></span> 商品カテゴリー</h2></div>
             <!--{strip}-->
 <div class="panel-body">
                 <ul class="nav nav-pills nav-stacked">

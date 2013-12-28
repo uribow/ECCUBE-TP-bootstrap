@@ -21,9 +21,9 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 *}-->
-<div id="mynavi_area">
+<div class="well">
     <!--{strip}-->
-        <ul class="mynavi_list clearfix">
+        <ul class="nav nav-pills nav-stacked">
 
             <!--{* 会員状態 *}-->
             <!--{if $tpl_login}-->
@@ -56,10 +56,10 @@
                     退会手続き</a></li>
             <!--{/if}-->
         </ul>
-
+<hr />
         <!--▼現在のポイント-->
         <!--{if $point_disp !== false}-->
-            <div class="point_announce clearfix">
+            <div class="alert alert-info">
                 <p>ようこそ&nbsp;／&nbsp;
                     <span class="user_name"><!--{$CustomerName1|h}--> <!--{$CustomerName2|h}-->様</span>
                     <!--{if $smarty.const.USE_POINT !== false}-->&nbsp;

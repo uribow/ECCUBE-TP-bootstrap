@@ -21,7 +21,7 @@
  *}-->
 <div class="panel panel-default">
     
-        <div class="panel-heading"><h2><span class="square">■</span>ログイン</h2></div>
+        <div class="panel-heading"><h2><span class="glyphicon glyphicon-th-large"></span> ログイン</h2></div>
   <div class="panel-body">
         <form name="login_form" id="login_form" method="post" action="<!--{$smarty.const.HTTPS_URL}-->frontparts/login_check.php" onsubmit="return fnCheckLogin('login_form')">
             <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
@@ -37,7 +37,8 @@
                     </p>
                     <!--{if !$tpl_disable_logout}-->
                         <p class="btn">
-                            <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_bloc_logout_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_bloc_logout.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_bloc_logout.jpg" onclick="fnFormModeSubmit('login_form', 'logout', '', ''); return false;" alt="ログアウト" />
+                            
+                            <button type="submit" class="btn btn-default" onclick="fnFormModeSubmit('login_form', 'logout', '', ''); return false;">ログアウト</button>
                         </p>
                     <!--{/if}-->
                 <!--{else}-->

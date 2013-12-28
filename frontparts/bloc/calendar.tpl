@@ -21,7 +21,7 @@
  *}-->
 <aside class="panel panel-default">
 <div class="panel-heading">
-    <h2><span class="square">■</span>営業カレンダー</h2>
+    <h2><span class="glyphicon glyphicon-th-large"></span> 営業カレンダー</h2>
 </div>
   <div class="panel-body">
        

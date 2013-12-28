@@ -59,21 +59,23 @@ $(document).ready(function() {
         <div class="btn_area">
             <ul>
                 <li>
-                    <a href="./payment.php" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg', 'back04-top')" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg', 'back04-top')"><img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" border="0" name="back04-top" id="back04-top" /></a>
+                    <a href="./payment.php"  name="back04-top" id="back04-top" class="btn btn-default" />戻る</a>
                 </li>
                     <!--{if $use_module}-->
                 <li>
-                    <input type="image" onclick="return fnCheckSubmit();" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" alt="次へ" name="next-top" id="next-top" />
+                    
+                    <button type="submit" class="btn btn-default" name="next-top" id="next-top" onclick="return fnCheckSubmit();">次へ</button>
                 </li> 
                     <!--{else}-->
                 <li>
-                    <input type="image" onclick="return fnCheckSubmit();" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_order_complete_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_order_complete.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_order_complete.jpg" alt="ご注文完了ページへ" name="next-top" id="next-top" />
+                    
+                    <button type="submit" class="btn btn-default" name="next-top" id="next-top" onclick="return fnCheckSubmit();">ご注文完了ページへ</button>
                 </li>
                 <!--{/if}-->
             </ul>
         </div>
 
-        <table summary="ご注文内容確認">
+        <table summary="ご注文内容確認" class="table">
             <colgroup width="10%"></colgroup>
             <colgroup width="40%"></colgroup>
             <colgroup width="20%"></colgroup>
@@ -141,7 +143,7 @@ $(document).ready(function() {
 
         <!--{* ログイン済みの会員のみ *}-->
         <!--{if $tpl_login == 1 && $smarty.const.USE_POINT !== false}-->
-            <table summary="ポイント確認" class="delivname">
+            <table summary="ポイント確認" class="delivname table">
             <colgroup width="30%"></colgroup>
             <colgroup width="70%"></colgroup>
                 <tr>
@@ -177,7 +179,7 @@ $(document).ready(function() {
         <!--{foreach item=shippingItem from=$arrShipping name=shippingItem}-->
         <h3>お届け先<!--{if $is_multiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
         <!--{if $is_multiple}-->
-            <table summary="ご注文内容確認">
+            <table summary="ご注文内容確認" class="table">
                 <colgroup width="10%"></colgroup>
                 <colgroup width="60%"></colgroup>
                 <colgroup width="20%"></colgroup>
@@ -220,7 +222,7 @@ $(document).ready(function() {
             </table>
         <!--{/if}-->
 
-        <table summary="お届け先確認" class="delivname">
+        <table summary="お届け先確認" class="delivname table">
             <colgroup width="30%"></colgroup>
             <colgroup width="70%"></colgroup>
             <tbody>
@@ -261,7 +263,7 @@ $(document).ready(function() {
         <!--お届け先ここまで-->
 
         <h3>配送方法・お支払方法・その他お問い合わせ</h3>
-        <table summary="配送方法・お支払方法・その他お問い合わせ" class="delivname">
+        <table summary="配送方法・お支払方法・その他お問い合わせ" class="delivname table">
             <colgroup width="30%"></colgroup>
             <colgroup width="70%"></colgroup>
             <tbody>
@@ -283,15 +285,17 @@ $(document).ready(function() {
         <div class="btn_area">
             <ul>
                 <li>
-                    <a href="./payment.php" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back<!--{$key}-->');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back<!--{$key}-->');"><img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" name="back<!--{$key}-->" /></a>
+                    <a href="./payment.php" name="back<!--{$key}-->" class="btn btn-default" />戻る</a>
                 </li>
                 <!--{if $use_module}-->
                 <li>
-                    <input type="image" onclick="return fnCheckSubmit();" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" alt="次へ" name="next" id="next" />
+                    
+                    <button type="submit" class="btn btn-default"  name="next" id="next" onclick="return fnCheckSubmit();">次へ</button>
                 </li>
                 <!--{else}-->
                 <li>
-                    <input type="image" onclick="return fnCheckSubmit();" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_order_complete_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_order_complete.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_order_complete.jpg" alt="ご注文完了ページへ"  name="next" id="next" />
+                    {$TPL_URLPATH}-->img/button/btn_order_complete.jpg" alt="ご注文完了ページへ"  name="next" id="next" />
+                    <button type="submit" class="btn btn-default" name="next" id="next" onclick="return fnCheckSubmit();" >ご注文完了ページへ</button>
                 </li>
                 <!--{/if}-->
         </ul>

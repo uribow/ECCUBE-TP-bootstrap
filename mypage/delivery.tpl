@@ -34,7 +34,8 @@
             <!--{* 退会時非表示 *}-->
             <!--{if $tpl_login}-->
                 <p class="add_address">
-                    <a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','600','640'); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_add_address_on.jpg','newadress');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_add_address.jpg','newadress');" target="_blank"><img src="<!--{$TPL_URLPATH}-->img/button/btn_add_address.jpg" alt="新しいお届け先を追加" border="0" name="newadress" /></a>
+                    
+                    <a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" target="_blank" name="newadress" class="btn btn-default" onclick="win03('./delivery_addr.php','delivadd','600','640'); return false;">新しいお届け先を追加</a>
                 </p>
             <!--{/if}-->
         <!--{/if}-->
@@ -46,7 +47,7 @@
             <input type="hidden" name="other_deliv_id" value="" />
             <input type="hidden" name="pageno" value="<!--{$tpl_pageno}-->" />
 
-            <table summary="お届け先">
+            <table summary="お届け先" class="table">
             <colgroup width="5%"></colgroup>
             <colgroup width="25%"></colgroup>
             <colgroup width="50%"></colgroup>

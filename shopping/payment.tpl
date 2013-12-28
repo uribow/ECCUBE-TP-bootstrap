@@ -141,7 +141,7 @@
             <!--{if $arrErr[$key] != ""}-->
             <p class="attention"><!--{$arrErr[$key]}--></p>
             <!--{/if}-->
-            <table summary="配送方法選択">
+            <table summary="配送方法選択" class="table">
                 <colgroup width="20%"></colgroup>
                 <colgroup width="80%"></colgroup>
                 <tr>
@@ -170,7 +170,7 @@
             <!--{if $arrErr[$key] != ""}-->
             <p class="attention"><!--{$arrErr[$key]}--></p>
             <!--{/if}-->
-            <table summary="お支払方法選択" id="payment">
+            <table summary="お支払方法選択" id="payment" class="table">
                 <colgroup width="20%"></colgroup>
                 <colgroup width="80%"></colgroup>
                 <thead>
@@ -278,11 +278,11 @@
         <div class="btn_area">
             <ul>
                 <li>
-                <a href="<!--{$tpl_back_url|h}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back03')" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back03')">
-                    <img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" border="0" name="back03" id="back03" /></a>
+                <a href="<!--{$tpl_back_url|h}-->" name="back03" id="back03" class="btn btn-default" />戻る</a>
                 </li>
                 <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" alt="次へ" name="next" id="next" />
+                    
+                    <button type="submit" class="btn btn-default" name="next" id="next">次へ</button>
                 </li>
             </ul>
         </div>

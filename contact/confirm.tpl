@@ -77,10 +77,12 @@
         <div class="btn_area">
             <ul>
                 <li>
-                    <a href="?" onclick="fnModeSubmit('return', '', ''); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back02');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back02');"> <img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" name="back02" id="back02" /></a>
+                    <a href="?" onclick="fnModeSubmit('return', '', ''); return false;" name="back02" id="back02" class="btn btn-default" />戻る</a>
+                    
                 </li>
                 <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg" alt="送信" name="send" id="send" />
+                    
+                    <button type="submit" class="btn btn-default" name="send" id="send" >送信</button>
                 </li>
             </ul>
         </div>

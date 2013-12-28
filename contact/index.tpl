@@ -32,7 +32,7 @@
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
         <input type="hidden" name="mode" value="confirm" />
 
-        <table summary="お問い合わせ">
+        <table summary="お問い合わせ" class="table">
             <tr>
                 <th>お名前<span class="attention">※</span></th>
                 <td>
@@ -60,8 +60,7 @@
                         <a href="http://search.post.japanpost.jp/zipcode/" target="_blank"><span class="mini">郵便番号検索</span></a>
                     </p>
                     <p class="zipimg">
-                        <a href="javascript:fnCallAddress('<!--{$smarty.const.INPUT_ZIP_URLPATH}-->', 'zip01', 'zip02', 'pref', 'addr01');">
-                            <img src="<!--{$TPL_URLPATH}-->img/button/btn_address_input.jpg" alt="住所自動入力" /></a>
+                        <a href="javascript:fnCallAddress('<!--{$smarty.const.INPUT_ZIP_URLPATH}-->', 'zip01', 'zip02', 'pref', 'addr01');" class="btn btn-default">住所自動入力</a>
                         <span class="mini">&nbsp;郵便番号を入力後、クリックしてください。</span>
                     </p>
                 </td>
@@ -123,7 +122,8 @@
         <div class="btn_area">
             <ul>
                 <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm_on.jpg', this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg', this)" src="<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg" alt="確認ページへ" name="confirm" />
+                    
+                    <button type="submit" class="btn btn-default" name="confirm" >確認ページへ</button>
                 </li>
             </ul>
         </div>

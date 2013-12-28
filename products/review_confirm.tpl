@@ -32,7 +32,7 @@
         <!--{/if}-->
     <!--{/foreach}-->
 
-    <table summary="お客様の声書き込み">
+    <table summary="お客様の声書き込み" class="table">
         <colgroup width="30%"></colgroup>
         <colgroup width="70%"></colgroup>
         <tr>
@@ -66,8 +66,9 @@
     </table>
     <div class="btn_area">
         <ul>
-            <li><input type="image" onclick=" mode.value='return';" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る"    name="back" id="back" /></li>
-            <li><input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg" alt="送信" name="send" id="send" /></li>
+            
+            <li><button type="submit" class="btn btn-default" name="back" id="back" onclick=" mode.value='return';">戻る</button></li>
+            <li><button type="submit" class="btn btn-default" name="send" id="send">送信</button></li>
         </ul>
     </div>
     </form>

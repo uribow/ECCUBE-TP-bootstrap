@@ -39,7 +39,7 @@
             <input type="hidden" name="<!--{$key|h}-->" value="<!--{$item|h}-->" />
             <!--{/if}-->
         <!--{/foreach}-->
-        <table summary=" " class="delivname">
+        <table summary=" " class="table">
             <colgroup width="30%"></colgroup>
             <colgroup width="70%"></colgroup>
             <tr>
@@ -111,11 +111,12 @@
         <div class="btn_area">
             <ul>
                 <li>
-                    <a href="?" onclick="fnModeSubmit('return', '', ''); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back');">
-                        <img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" name="back" id="back" /></a>
+                    <a href="?" onclick="fnModeSubmit('return', '', ''); return false;" name="back" id="back" class="btn btn-default">戻る</a>
+                        
                 </li>
                 <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg" alt="送信" name="complete" id="complete" />
+                    
+                    <button type="submit" class="btn btn-default" name="complete" id="complete">送信</button>
                 </li>
             </ul>
         </div>
