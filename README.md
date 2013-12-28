@@ -1,7 +1,12 @@
 bootstrap3
 ====
-EC-cubeのプレーンテンプレートにbootstrap3を導入中です。
-現在製作中。
+デザインテンプレート・シンプルバージョン(2.11系・無料)
+http://www.ec-cube.net/products/detail.php?product_id=182
+に
+Bootstrap3
+http://getbootstrap.com/
+を導入。
+
 
 <a href="https://github.com/noboo/test/archive/master.tar.gz"
                  class="minibutton sidebar-button"
