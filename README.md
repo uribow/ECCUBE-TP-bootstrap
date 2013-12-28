@@ -18,3 +18,20 @@ http://getbootstrap.com/
 を導入。
 
 
+サンプル http://sample.dizitalbass.com/cube/
+
+変更点
+<ul>
+<li>html5
+<li>CSS3
+<li>レスポンシブ
+</ul>
+
+<a href="https://github.com/noboo/test/archive/master.tar.gz"
+                 class="minibutton sidebar-button"
+                 title="Download this repository as a tar.gz file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download tar.gz
+              </a>
+
