@@ -25,6 +25,8 @@ http://getbootstrap.com/
 <li>html5
 <li>CSS3
 <li>レスポンシブ
+<li>jquery-1.10.2
+<li>heightLine.js
 </ul>
 
 <a href="https://github.com/noboo/test/archive/master.tar.gz"
