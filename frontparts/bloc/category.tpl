@@ -36,7 +36,7 @@
                     <!--{assign var=firstdone value=0}-->
                     <!--{section name=cnt loop=$arrTree}-->
                         <!--{* 表示フラグがTRUEなら表示 *}-->
-                        <!--{if $arrTree[cnt].display == 1}-->
+                        <!--{if $arrTree[cnt].display == 1 or true}-->
                             <!--{assign var=level value=`$arrTree[cnt].level`}-->
                             <!--{assign var=levdiff value=`$level-$preLev`}-->
                                 <!--{if $levdiff > 0}-->
