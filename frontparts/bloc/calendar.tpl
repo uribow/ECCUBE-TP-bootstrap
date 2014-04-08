@@ -54,7 +54,6 @@
                 <!--{/if}-->
             <!--{/section}-->
             <p class="information">※赤字は休業日です</p>
-        </div>
 
   </div>
 </aside>
