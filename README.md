@@ -31,7 +31,7 @@ bootstrap3
 *レスポンシブにしたものの、スマフォにはスマフォ用のテンプレートが良いなと思いました。
 
 
-
+<hr />
 <a href="https://github.com/noboo/test/archive/master.tar.gz"
                  class="minibutton sidebar-button"
                  title="Download this repository as a tar.gz file"
