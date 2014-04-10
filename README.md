@@ -17,7 +17,7 @@ bootstrap3
 を導入。
 
 
-サンプル http://sample.dizitalbass.com/cube/
+<a href="http://sample.dizitalbass.com/cube/">サンプル</a>
 
 変更点
 <ul>
