@@ -10,11 +10,10 @@ bootstrap3
               </a>
               
               
-デザインテンプレート・シンプルバージョン(2.11系・無料)
-http://www.ec-cube.net/products/detail.php?product_id=182
+<a href="http://www.ec-cube.net/products/detail.php?product_id=182">デザインテンプレート・シンプルバージョン(2.11系・無料)</a>
+
 に
-Bootstrap3
-http://getbootstrap.com/
+<a href="http://getbootstrap.com/">Bootstrap3</a>
 を導入。
 
 
