@@ -10,14 +10,14 @@ bootstrap3
               </a>
               
               
-<a href="http://www.ec-cube.net/products/detail.php?product_id=182">デザインテンプレート・シンプルバージョン(2.11系・無料)</a>
+<a href="http://www.ec-cube.net/products/detail.php?product_id=182" target="_blank">デザインテンプレート・シンプルバージョン(2.11系・無料)</a>
 
 に
-<a href="http://getbootstrap.com/">Bootstrap3</a>
+<a href="http://getbootstrap.com/" target="_blank">Bootstrap3</a>
 を導入。
 
 
-<a href="http://sample.dizitalbass.com/cube/">サンプル</a>
+<a href="http://sample.dizitalbass.com/cube/" target="_blank">サンプル</a>
 
 変更点
 <ul>
